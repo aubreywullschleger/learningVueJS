@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VueJS and the DOM</title>
+  <script type="text/javascript" src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <p>{{title}}</p>
+    <p>{{sayHello()}} - <a v-bind:href="link">google</a>
+    <!-- v-bind directive tells vue to not use a normal attribute and instead bind the attribute we want to use by passing in the attribute to v-bind with directive:attribute="dataProperty" -->
+    <!-- note, we can't use curly brace syntax on any element attribute, we only use them in the place where we would normally use text - for example we won't use {{link}} as it will try to load a url that isn't valid - tries to load {{link}} -->
+    </p>
+  </div>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
