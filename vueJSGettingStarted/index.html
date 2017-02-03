@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VueJS</title>
+  <!-- <script type="text/javascript" src="vue/vue.js"></script> -->
+  <script type="text/javascript" src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <input type="text" v-on:input="changeTitle"> <!-- v-on is a directive, an instruction the vuejs will recognize. v-on tells vue to listen to an event, the event is passed after a colon then the name of the event to listen to, in this case input, then is assigned a value that runs whenever the input is updated - in this case a method that we made up changeTitle - v-on:event="doThisThing/callMethod" -->
+    <p>{{title}}</p> <!--curly brace syntax like angular -->
+  </div>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
